@@ -6,13 +6,11 @@ class Solution:
         for i in range(0, len(prices)):
             if prices[i] < prices[a]:
                 profit = prices[b] - prices[a]
-                if profit > max_profit:
-                    max_profit = profit
+                max_profit = max(max_profit, profit)
                 a = i
                 b = i
             if prices[i] > prices[b]:
                 b = i
         profit = prices[b] - prices[a]
-        if profit > max_profit:
-            max_profit = profit
+        max_profit = max(max_profit, profit)
         return max_profit

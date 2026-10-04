@@ -12,7 +12,7 @@ int main(void) {
     return 0;
   }
   l = 1;
-  r = 1 '000' 000'001;
+  r = 1'000'000'001;
   while (l != r) {
     m = (l + r) / 2;
     if ((y + m) * 100 / (x + m) - z)

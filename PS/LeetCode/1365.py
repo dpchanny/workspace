@@ -2,9 +2,9 @@ class Solution:
     def smallerNumbersThanCurrent(self, nums):
         size = len(nums)
         counts = []
-        for i in range(0, size):
+        for i in range(size):
             count = 0
-            for j in range(0, size):
+            for j in range(size):
                 if i == j:
                     continue
                 if nums[i] > nums[j]:

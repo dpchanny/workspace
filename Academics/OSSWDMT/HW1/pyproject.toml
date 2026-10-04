@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ascii-art"
+version = "0.1.0"
+description = "Render images as terminal ASCII art"
+requires-python = ">=3.14"
+dependencies = [
+    "Pillow",
+]
+
+[project.scripts]
+ascii-art = "ascii_art:main"
+
+[tool.setuptools]
+py-modules = ["ascii_art"]
